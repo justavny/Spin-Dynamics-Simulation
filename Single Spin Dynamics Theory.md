@@ -2,15 +2,15 @@
 
 ### 1. Introduction
 
-A spin-$\frac{1}{2}$ particle is the simplest quantum mechanical system and can be represented using a single qubit.
+A spin-${\frac{1}{2}}$ particle is the simplest quantum mechanical system and can be represented using a single qubit.
 
 The quantum state of a spin can be written as ${|\psi\rangle = \alpha |+\rangle + \beta |-\rangle}$, where ${|\alpha|^2 + |\beta|^2 = 1 }$ and ${|+\rangle}$ and ${|- \rangle}$ are the eigenstates of ${\hat{S}^z}$ with eigenvalues of ${\pm \frac{\hbar}{2}}$.   
 
 The state evolves according to the Schrödinger equation
 
-$$
+$${
 i\frac{d}{dt}|\psi(t)\rangle = H|\psi(t)\rangle
-$$
+}$$
 
 where \(H\) is the Hamiltonian of the system.
 
@@ -71,7 +71,7 @@ e^{-iHt}
 |\psi(0)\rangle
 }$$
 
-The operator ${} U(t)=e^{-iHt} }$ is called the **time-evolution operator**. It completely determines how the quantum state changes with time.
+The operator ${ U(t)=e^{-iHt} }$ is called the **time-evolution operator**. It completely determines how the quantum state changes with time.
 
 
 ### 3. Unitary Operator for an Arbitrary Quantum State
