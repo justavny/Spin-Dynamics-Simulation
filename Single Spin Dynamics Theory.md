@@ -9,7 +9,7 @@ The quantum state of a spin can be written as $|\psi\rangle = \alpha |+\rangle +
 The state evolves according to the Schrödinger equation
 
 $$
-i\frac{d}{dt}|\psi(t)\rangle = H|\psi(t)\rangle,
+i\frac{d}{dt}|\psi(t)\rangle = H|\psi(t)\rangle
 $$
 
 where \(H\) is the Hamiltonian of the system.
@@ -32,7 +32,7 @@ e^{i\phi}\sin\frac{\theta}{2}
 &
 e^{i(\phi+\lambda)}
 \cos\frac{\theta}{2}
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Setting $\lambda=0$ generates
@@ -41,14 +41,14 @@ $$
 |\psi(\theta,\phi)\rangle
 =
 U_3(\theta,\phi,0)
-|+\rangle.
+|+\rangle
 $$
 
 
 
 ### 2. Hamiltonian and Time Evolution
 
-Consider a spin placed in a magnetic field directed along the x-axis. The Hamiltonian is $ H = h_x \hat S^x, $
+Consider a spin placed in a magnetic field directed along the x-axis. The Hamiltonian is $ H = h_x \hat S^x $
 
 where
 
@@ -68,7 +68,7 @@ $$
 |\psi(t)\rangle
 =
 e^{-iHt}
-|\psi(0)\rangle.
+|\psi(0)\rangle
 $$
 
 The operator $ U(t)=e^{-iHt} $ is called the **time-evolution operator**. It completely determines how the quantum state changes with time.
@@ -79,7 +79,7 @@ The operator $ U(t)=e^{-iHt} $ is called the **time-evolution operator**. It com
 Substituting the Hamiltonian,
 
 $$
-U(t) = e^{-ih_x t \hat S^x} = e^{-i(h_x t/2)\sigma_x}.
+U(t) = e^{-ih_x t \hat S^x} = e^{-i(h_x t/2)\sigma_x}
 $$
 
 Using $ \sigma_x^2=I, $ the exponential simplifies to
@@ -100,7 +100,7 @@ R_x(\theta)
 1 & 0 & 0\\
 0 & \cos\theta & -\sin\theta\\
 0 & \sin\theta & \cos\theta
-\end{pmatrix}.
+\end{pmatrix}
 $$  
 
 is the Rotation matrix that rotates a 3D vector about the x-axis by $\theta$.  
@@ -112,12 +112,12 @@ A rotation of a quantum state by an angle $\theta$ about the axis $\alpha=(x,y,z
 $$
 \hat R_\alpha(\theta)
 =
-e^{-i\theta \hat\sigma^\alpha/2},
+e^{-i\theta \hat\sigma^\alpha/2}
 $$
 
 where $\hat\sigma^\alpha$ denotes the corresponding Pauli matrix.
 
-Using the identity $ (\hat\sigma^\alpha)^2 = I,$
+Using the identity $ (\hat\sigma^\alpha)^2 = I$
 
 the rotation operator can be written as 
 $$
@@ -126,7 +126,7 @@ $$
 I\cos\frac{\theta}{2}
 -
 i\hat\sigma^\alpha
-\sin\frac{\theta}{2}.
+\sin\frac{\theta}{2}
 $$
 
 Thus, a rotation of a spin state corresponds to a unitary transformation of the qubit state. In Qiskit, such operations are implemented through the rotation gates
@@ -134,7 +134,7 @@ Thus, a rotation of a spin state corresponds to a unitary transformation of the 
 $$
 R_x(\theta),\qquad
 R_y(\theta),\qquad
-R_z(\theta).
+R_z(\theta)
 $$
 
 These rotations are particularly useful for changing the measurement basis. Since quantum hardware performs measurements in the computational basis, corresponding to the eigenstates of $S^z$, suitable rotations allow measurements of spin projections along the $x$ and $y$ directions as well.
